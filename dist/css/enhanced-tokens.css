@@ -1,0 +1,45 @@
+/**
+ * Enhanced Fluid Typography with Utopia-inspired clamp() functions
+ * Auto-generated - do not edit directly
+ */
+
+:root {
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+  --spacing-4xl: 80px;
+  --spacing-5xl: 96px;
+}
+
+/* Responsive overrides for spacing */
+@media (max-width: 767px) {
+  :root {
+    --spacing-xs: 4px;
+    --spacing-sm: 6px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 20px;
+    --spacing-2xl: 28px;
+    --spacing-3xl: 36px;
+    --spacing-4xl: 44px;
+    --spacing-5xl: 52px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  :root {
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 20px;
+    --spacing-xl: 28px;
+    --spacing-2xl: 40px;
+    --spacing-3xl: 52px;
+    --spacing-4xl: 64px;
+    --spacing-5xl: 76px;
+  }
+}

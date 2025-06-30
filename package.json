@@ -1,0 +1,26 @@
+{
+  "name": "harbour.space-style-dictionary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "style-dictionary build --config style-dictionary.config.js && node figma-sync.js && node build-enhanced.js",
+    "build:tokens": "style-dictionary build --config style-dictionary.config.js",
+    "build:enhanced": "node build-enhanced.js",
+    "build:figma": "node figma-sync.js",
+    "clean": "rm -rf dist/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:plugin": "node figma-plugin-sync.js",
+    "build:all": "npm run build && npm run build:plugin",
+    "deploy": "./deploy.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tokens-studio/sd-transforms": "^2.0.1",
+    "style-dictionary": "^5.0.0",
+    "utopia-core": "^1.6.0"
+  }
+}

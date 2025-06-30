@@ -1,0 +1,158 @@
+name: Deploy Design Tokens
+
+on:
+  push:
+    branches: [main, master]
+    paths: ['tokens/**', 'style-dictionary.config.js', 'figma-plugin-sync.js']
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Style Dictionary tokens
+        run: npm run build:tokens
+
+      - name: Generate Figma plugin format
+        run: npm run build:plugin
+
+      - name: Prepare deployment files
+        run: |
+          mkdir -p docs
+          cp dist/figma-plugin-format.json docs/tokens.json
+          
+          # Create index.html for GitHub Pages
+          cat > docs/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Harbour.Space Design Tokens</title>
+              <style>
+                body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 40px; }
+                .container { max-width: 800px; margin: 0 auto; }
+                .endpoint { background: #f5f5f5; padding: 15px; border-radius: 8px; margin: 20px 0; }
+                .endpoint code { background: #e1e8ed; padding: 2px 6px; border-radius: 4px; }
+                pre { background: #f8f9fa; padding: 15px; border-radius: 8px; overflow-x: auto; }
+                .status { padding: 10px; border-radius: 6px; margin: 10px 0; }
+                .success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+                .info { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+              </style>
+          </head>
+          <body>
+              <div class="container">
+                  <h1>🎨 Harbour.Space Design Tokens</h1>
+                  
+                  <div class="info status">
+                      <strong>Last Updated:</strong> <span id="lastUpdated"></span>
+                  </div>
+
+                  <h2>📡 API Endpoint</h2>
+                  <div class="endpoint">
+                      <p><strong>Figma Plugin Format:</strong></p>
+                      <code id="tokenUrl">Loading...</code>
+                      <button onclick="copyToClipboard()" style="margin-left: 10px; padding: 4px 8px; border: 1px solid #ccc; border-radius: 4px; cursor: pointer;">Copy</button>
+                  </div>
+
+                  <h2>📊 Token Preview</h2>
+                  <div id="tokenCount" class="success status">Loading tokens...</div>
+                  <pre id="tokenPreview">Loading...</pre>
+
+                  <h2>🔧 Usage in Figma Plugin</h2>
+                  <ol>
+                      <li>Open the "JSON to Variables" Figma plugin</li>
+                      <li>Paste the URL above into the "Load from URL" field</li>
+                      <li>Click "Fetch from URL"</li>
+                      <li>Review the tokens and click "Create Variables"</li>
+                  </ol>
+
+                  <h2>📁 Available Files</h2>
+                  <ul>
+                      <li><a href="./tokens.json">tokens.json</a> - Figma plugin format</li>
+                  </ul>
+              </div>
+
+              <script>
+                  // Set last updated time
+                  document.getElementById('lastUpdated').textContent = new Date().toLocaleString();
+                  
+                  // Set token URL
+                  const tokenUrl = window.location.origin + window.location.pathname.replace(/\/$/, '') + '/tokens.json';
+                  document.getElementById('tokenUrl').textContent = tokenUrl;
+
+                  // Copy URL to clipboard
+                  function copyToClipboard() {
+                      navigator.clipboard.writeText(tokenUrl).then(() => {
+                          const button = event.target;
+                          const originalText = button.textContent;
+                          button.textContent = 'Copied!';
+                          button.style.background = '#28a745';
+                          button.style.color = 'white';
+                          setTimeout(() => {
+                              button.textContent = originalText;
+                              button.style.background = '';
+                              button.style.color = '';
+                          }, 2000);
+                      });
+                  }
+
+                  // Load and preview tokens
+                  fetch('./tokens.json')
+                      .then(response => response.json())
+                      .then(data => {
+                          // Count tokens
+                          let tokenCount = 0;
+                          Object.values(data).forEach(category => {
+                              tokenCount += Object.keys(category).length;
+                          });
+                          
+                          document.getElementById('tokenCount').innerHTML = 
+                              `✅ <strong>${tokenCount} tokens</strong> across <strong>${Object.keys(data).length} categories</strong>`;
+                          
+                          // Show preview (first few tokens)
+                          const preview = {};
+                          Object.entries(data).forEach(([category, tokens]) => {
+                              const firstTokens = Object.entries(tokens).slice(0, 2);
+                              if (firstTokens.length > 0) {
+                                  preview[category] = Object.fromEntries(firstTokens);
+                              }
+                          });
+                          
+                          document.getElementById('tokenPreview').textContent = 
+                              JSON.stringify(preview, null, 2) + '\n\n// ... and more tokens';
+                      })
+                      .catch(error => {
+                          document.getElementById('tokenCount').innerHTML = '❌ Failed to load tokens';
+                          document.getElementById('tokenPreview').textContent = 'Error: ' + error.message;
+                      });
+              </script>
+          </body>
+          </html>
+          EOF
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          commit_message: 'Deploy design tokens [skip ci]'
+
+      - name: Summary
+        run: |
+          echo "🎉 Design tokens deployed successfully!"
+          echo "📍 URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/tokens.json"
+          echo "🔧 Use this URL in your Figma plugin to automatically sync tokens"

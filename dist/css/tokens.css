@@ -1,0 +1,35 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+  --spacing-4xl: 80px;
+  --spacing-5xl: 96px;
+  --typography-fluid-xs: clamp(11px, 11px + (12 - 11) * ((100vw - 320px) / (1200 - 320)), 12px);
+  --typography-fluid-sm: clamp(13px, 13px + (14 - 13) * ((100vw - 320px) / (1200 - 320)), 14px);
+  --typography-fluid-base: clamp(14px, 14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)), 16px);
+  --typography-fluid-lg: clamp(16px, 16px + (18 - 16) * ((100vw - 320px) / (1200 - 320)), 18px);
+  --typography-fluid-xl: clamp(18px, 18px + (20 - 18) * ((100vw - 320px) / (1200 - 320)), 20px);
+  --typography-fluid-2xl: clamp(20px, 20px + (24 - 20) * ((100vw - 320px) / (1200 - 320)), 24px);
+  --typography-fluid-3xl: clamp(24px, 24px + (30 - 24) * ((100vw - 320px) / (1200 - 320)), 30px);
+  --typography-fluid-4xl: clamp(28px, 28px + (36 - 28) * ((100vw - 320px) / (1200 - 320)), 36px);
+  --typography-fluid-5xl: clamp(32px, 32px + (48 - 32) * ((100vw - 320px) / (1200 - 320)), 48px);
+  --typography-fluid-6xl: clamp(40px, 40px + (64 - 40) * ((100vw - 320px) / (1200 - 320)), 64px);
+  --typography-font-size-xs: 12px;
+  --typography-font-size-sm: 14px;
+  --typography-font-size-base: 16px;
+  --typography-font-size-lg: 18px;
+  --typography-font-size-xl: 20px;
+  --typography-font-size-2xl: 24px;
+  --typography-font-size-3xl: 30px;
+  --typography-font-size-4xl: 36px;
+  --typography-font-size-5xl: 48px;
+  --typography-font-size-6xl: 64px;
+}

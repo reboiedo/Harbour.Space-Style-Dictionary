@@ -1,0 +1,106 @@
+{
+  "typography": {
+    "fontSize": {
+      "xs": {
+        "value": "12px",
+        "type": "fontSizes",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1200,
+          "minSize": 11,
+          "maxSize": 12
+        }
+      },
+      "sm": {
+        "value": "14px",
+        "type": "fontSizes",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1200,
+          "minSize": 13,
+          "maxSize": 14
+        }
+      },
+      "base": {
+        "value": "16px",
+        "type": "fontSizes",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1200,
+          "minSize": 14,
+          "maxSize": 16
+        }
+      },
+      "lg": {
+        "value": "18px",
+        "type": "fontSizes",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1200,
+          "minSize": 16,
+          "maxSize": 18
+        }
+      },
+      "xl": {
+        "value": "20px",
+        "type": "fontSizes",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1200,
+          "minSize": 18,
+          "maxSize": 20
+        }
+      },
+      "2xl": {
+        "value": "24px",
+        "type": "fontSizes",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1200,
+          "minSize": 20,
+          "maxSize": 24
+        }
+      },
+      "3xl": {
+        "value": "30px",
+        "type": "fontSizes",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1200,
+          "minSize": 24,
+          "maxSize": 30
+        }
+      },
+      "4xl": {
+        "value": "36px",
+        "type": "fontSizes",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1200,
+          "minSize": 28,
+          "maxSize": 36
+        }
+      },
+      "5xl": {
+        "value": "48px",
+        "type": "fontSizes",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1200,
+          "minSize": 32,
+          "maxSize": 48
+        }
+      },
+      "6xl": {
+        "value": "64px",
+        "type": "fontSizes",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1200,
+          "minSize": 40,
+          "maxSize": 64
+        }
+      }
+    }
+  }
+}

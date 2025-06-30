@@ -1,0 +1,170 @@
+{
+  "phone": {
+    "spacing/xs": {
+      "value": 4,
+      "type": "spacing",
+      "breakpoint": "phone",
+      "description": "Responsive phone value"
+    },
+    "spacing/sm": {
+      "value": 6,
+      "type": "spacing",
+      "breakpoint": "phone",
+      "description": "Responsive phone value"
+    },
+    "spacing/md": {
+      "value": 12,
+      "type": "spacing",
+      "breakpoint": "phone",
+      "description": "Responsive phone value"
+    },
+    "spacing/lg": {
+      "value": 16,
+      "type": "spacing",
+      "breakpoint": "phone",
+      "description": "Responsive phone value"
+    },
+    "spacing/xl": {
+      "value": 20,
+      "type": "spacing",
+      "breakpoint": "phone",
+      "description": "Responsive phone value"
+    },
+    "spacing/2xl": {
+      "value": 28,
+      "type": "spacing",
+      "breakpoint": "phone",
+      "description": "Responsive phone value"
+    },
+    "spacing/3xl": {
+      "value": 36,
+      "type": "spacing",
+      "breakpoint": "phone",
+      "description": "Responsive phone value"
+    },
+    "spacing/4xl": {
+      "value": 44,
+      "type": "spacing",
+      "breakpoint": "phone",
+      "description": "Responsive phone value"
+    },
+    "spacing/5xl": {
+      "value": 52,
+      "type": "spacing",
+      "breakpoint": "phone",
+      "description": "Responsive phone value"
+    }
+  },
+  "tablet": {
+    "spacing/xs": {
+      "value": 4,
+      "type": "spacing",
+      "breakpoint": "tablet",
+      "description": "Responsive tablet value"
+    },
+    "spacing/sm": {
+      "value": 8,
+      "type": "spacing",
+      "breakpoint": "tablet",
+      "description": "Responsive tablet value"
+    },
+    "spacing/md": {
+      "value": 16,
+      "type": "spacing",
+      "breakpoint": "tablet",
+      "description": "Responsive tablet value"
+    },
+    "spacing/lg": {
+      "value": 20,
+      "type": "spacing",
+      "breakpoint": "tablet",
+      "description": "Responsive tablet value"
+    },
+    "spacing/xl": {
+      "value": 28,
+      "type": "spacing",
+      "breakpoint": "tablet",
+      "description": "Responsive tablet value"
+    },
+    "spacing/2xl": {
+      "value": 40,
+      "type": "spacing",
+      "breakpoint": "tablet",
+      "description": "Responsive tablet value"
+    },
+    "spacing/3xl": {
+      "value": 52,
+      "type": "spacing",
+      "breakpoint": "tablet",
+      "description": "Responsive tablet value"
+    },
+    "spacing/4xl": {
+      "value": 64,
+      "type": "spacing",
+      "breakpoint": "tablet",
+      "description": "Responsive tablet value"
+    },
+    "spacing/5xl": {
+      "value": 76,
+      "type": "spacing",
+      "breakpoint": "tablet",
+      "description": "Responsive tablet value"
+    }
+  },
+  "desktop": {
+    "spacing/xs": {
+      "value": 4,
+      "type": "spacing",
+      "breakpoint": "desktop",
+      "description": "Responsive desktop value"
+    },
+    "spacing/sm": {
+      "value": 8,
+      "type": "spacing",
+      "breakpoint": "desktop",
+      "description": "Responsive desktop value"
+    },
+    "spacing/md": {
+      "value": 16,
+      "type": "spacing",
+      "breakpoint": "desktop",
+      "description": "Responsive desktop value"
+    },
+    "spacing/lg": {
+      "value": 24,
+      "type": "spacing",
+      "breakpoint": "desktop",
+      "description": "Responsive desktop value"
+    },
+    "spacing/xl": {
+      "value": 32,
+      "type": "spacing",
+      "breakpoint": "desktop",
+      "description": "Responsive desktop value"
+    },
+    "spacing/2xl": {
+      "value": 48,
+      "type": "spacing",
+      "breakpoint": "desktop",
+      "description": "Responsive desktop value"
+    },
+    "spacing/3xl": {
+      "value": 64,
+      "type": "spacing",
+      "breakpoint": "desktop",
+      "description": "Responsive desktop value"
+    },
+    "spacing/4xl": {
+      "value": 80,
+      "type": "spacing",
+      "breakpoint": "desktop",
+      "description": "Responsive desktop value"
+    },
+    "spacing/5xl": {
+      "value": 96,
+      "type": "spacing",
+      "breakpoint": "desktop",
+      "description": "Responsive desktop value"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "spacing/xs": {
+    "value": 4,
+    "type": "spacing",
+    "breakpoint": "tablet",
+    "description": "Responsive tablet value"
+  },
+  "spacing/sm": {
+    "value": 8,
+    "type": "spacing",
+    "breakpoint": "tablet",
+    "description": "Responsive tablet value"
+  },
+  "spacing/md": {
+    "value": 16,
+    "type": "spacing",
+    "breakpoint": "tablet",
+    "description": "Responsive tablet value"
+  },
+  "spacing/lg": {
+    "value": 20,
+    "type": "spacing",
+    "breakpoint": "tablet",
+    "description": "Responsive tablet value"
+  },
+  "spacing/xl": {
+    "value": 28,
+    "type": "spacing",
+    "breakpoint": "tablet",
+    "description": "Responsive tablet value"
+  },
+  "spacing/2xl": {
+    "value": 40,
+    "type": "spacing",
+    "breakpoint": "tablet",
+    "description": "Responsive tablet value"
+  },
+  "spacing/3xl": {
+    "value": 52,
+    "type": "spacing",
+    "breakpoint": "tablet",
+    "description": "Responsive tablet value"
+  },
+  "spacing/4xl": {
+    "value": 64,
+    "type": "spacing",
+    "breakpoint": "tablet",
+    "description": "Responsive tablet value"
+  },
+  "spacing/5xl": {
+    "value": 76,
+    "type": "spacing",
+    "breakpoint": "tablet",
+    "description": "Responsive tablet value"
+  }
+}

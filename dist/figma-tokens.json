@@ -1,0 +1,443 @@
+{
+  "phone": {
+    "spacing/xs": {
+      "value": 4,
+      "type": "spacing",
+      "breakpoint": "phone"
+    },
+    "spacing/sm": {
+      "value": 8,
+      "type": "spacing",
+      "breakpoint": "phone"
+    },
+    "spacing/md": {
+      "value": 16,
+      "type": "spacing",
+      "breakpoint": "phone"
+    },
+    "spacing/lg": {
+      "value": 24,
+      "type": "spacing",
+      "breakpoint": "phone"
+    },
+    "spacing/xl": {
+      "value": 32,
+      "type": "spacing",
+      "breakpoint": "phone"
+    },
+    "spacing2xl": {
+      "value": 48,
+      "type": "spacing",
+      "breakpoint": "phone"
+    },
+    "spacing3xl": {
+      "value": 64,
+      "type": "spacing",
+      "breakpoint": "phone"
+    },
+    "spacing4xl": {
+      "value": 80,
+      "type": "spacing",
+      "breakpoint": "phone"
+    },
+    "spacing5xl": {
+      "value": 96,
+      "type": "spacing",
+      "breakpoint": "phone"
+    },
+    "typography/fluid/xs": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "phone"
+    },
+    "typography/fluid/sm": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "phone"
+    },
+    "typography/fluid/base": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "phone"
+    },
+    "typography/fluid/lg": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "phone"
+    },
+    "typography/fluid/xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "phone"
+    },
+    "typography/fluid2xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "phone"
+    },
+    "typography/fluid3xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "phone"
+    },
+    "typography/fluid4xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "phone"
+    },
+    "typography/fluid5xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "phone"
+    },
+    "typography/fluid6xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "phone"
+    },
+    "typography/font/size/xs": {
+      "value": 12,
+      "type": "fontSize",
+      "breakpoint": "phone"
+    },
+    "typography/font/size/sm": {
+      "value": 14,
+      "type": "fontSize",
+      "breakpoint": "phone"
+    },
+    "typography/font/size/base": {
+      "value": 16,
+      "type": "fontSize",
+      "breakpoint": "phone"
+    },
+    "typography/font/size/lg": {
+      "value": 18,
+      "type": "fontSize",
+      "breakpoint": "phone"
+    },
+    "typography/font/size/xl": {
+      "value": 20,
+      "type": "fontSize",
+      "breakpoint": "phone"
+    },
+    "typography/font/size2xl": {
+      "value": 24,
+      "type": "fontSize",
+      "breakpoint": "phone"
+    },
+    "typography/font/size3xl": {
+      "value": 30,
+      "type": "fontSize",
+      "breakpoint": "phone"
+    },
+    "typography/font/size4xl": {
+      "value": 36,
+      "type": "fontSize",
+      "breakpoint": "phone"
+    },
+    "typography/font/size5xl": {
+      "value": 48,
+      "type": "fontSize",
+      "breakpoint": "phone"
+    },
+    "typography/font/size6xl": {
+      "value": 64,
+      "type": "fontSize",
+      "breakpoint": "phone"
+    }
+  },
+  "tablet": {
+    "spacing/xs": {
+      "value": 4,
+      "type": "spacing",
+      "breakpoint": "tablet"
+    },
+    "spacing/sm": {
+      "value": 8,
+      "type": "spacing",
+      "breakpoint": "tablet"
+    },
+    "spacing/md": {
+      "value": 16,
+      "type": "spacing",
+      "breakpoint": "tablet"
+    },
+    "spacing/lg": {
+      "value": 24,
+      "type": "spacing",
+      "breakpoint": "tablet"
+    },
+    "spacing/xl": {
+      "value": 32,
+      "type": "spacing",
+      "breakpoint": "tablet"
+    },
+    "spacing2xl": {
+      "value": 48,
+      "type": "spacing",
+      "breakpoint": "tablet"
+    },
+    "spacing3xl": {
+      "value": 64,
+      "type": "spacing",
+      "breakpoint": "tablet"
+    },
+    "spacing4xl": {
+      "value": 80,
+      "type": "spacing",
+      "breakpoint": "tablet"
+    },
+    "spacing5xl": {
+      "value": 96,
+      "type": "spacing",
+      "breakpoint": "tablet"
+    },
+    "typography/fluid/xs": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "tablet"
+    },
+    "typography/fluid/sm": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "tablet"
+    },
+    "typography/fluid/base": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "tablet"
+    },
+    "typography/fluid/lg": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "tablet"
+    },
+    "typography/fluid/xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "tablet"
+    },
+    "typography/fluid2xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "tablet"
+    },
+    "typography/fluid3xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "tablet"
+    },
+    "typography/fluid4xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "tablet"
+    },
+    "typography/fluid5xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "tablet"
+    },
+    "typography/fluid6xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "tablet"
+    },
+    "typography/font/size/xs": {
+      "value": 12,
+      "type": "fontSize",
+      "breakpoint": "tablet"
+    },
+    "typography/font/size/sm": {
+      "value": 14,
+      "type": "fontSize",
+      "breakpoint": "tablet"
+    },
+    "typography/font/size/base": {
+      "value": 16,
+      "type": "fontSize",
+      "breakpoint": "tablet"
+    },
+    "typography/font/size/lg": {
+      "value": 18,
+      "type": "fontSize",
+      "breakpoint": "tablet"
+    },
+    "typography/font/size/xl": {
+      "value": 20,
+      "type": "fontSize",
+      "breakpoint": "tablet"
+    },
+    "typography/font/size2xl": {
+      "value": 24,
+      "type": "fontSize",
+      "breakpoint": "tablet"
+    },
+    "typography/font/size3xl": {
+      "value": 30,
+      "type": "fontSize",
+      "breakpoint": "tablet"
+    },
+    "typography/font/size4xl": {
+      "value": 36,
+      "type": "fontSize",
+      "breakpoint": "tablet"
+    },
+    "typography/font/size5xl": {
+      "value": 48,
+      "type": "fontSize",
+      "breakpoint": "tablet"
+    },
+    "typography/font/size6xl": {
+      "value": 64,
+      "type": "fontSize",
+      "breakpoint": "tablet"
+    }
+  },
+  "desktop": {
+    "spacing/xs": {
+      "value": 4,
+      "type": "spacing",
+      "breakpoint": "desktop"
+    },
+    "spacing/sm": {
+      "value": 8,
+      "type": "spacing",
+      "breakpoint": "desktop"
+    },
+    "spacing/md": {
+      "value": 16,
+      "type": "spacing",
+      "breakpoint": "desktop"
+    },
+    "spacing/lg": {
+      "value": 24,
+      "type": "spacing",
+      "breakpoint": "desktop"
+    },
+    "spacing/xl": {
+      "value": 32,
+      "type": "spacing",
+      "breakpoint": "desktop"
+    },
+    "spacing2xl": {
+      "value": 48,
+      "type": "spacing",
+      "breakpoint": "desktop"
+    },
+    "spacing3xl": {
+      "value": 64,
+      "type": "spacing",
+      "breakpoint": "desktop"
+    },
+    "spacing4xl": {
+      "value": 80,
+      "type": "spacing",
+      "breakpoint": "desktop"
+    },
+    "spacing5xl": {
+      "value": 96,
+      "type": "spacing",
+      "breakpoint": "desktop"
+    },
+    "typography/fluid/xs": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "desktop"
+    },
+    "typography/fluid/sm": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "desktop"
+    },
+    "typography/fluid/base": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "desktop"
+    },
+    "typography/fluid/lg": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "desktop"
+    },
+    "typography/fluid/xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "desktop"
+    },
+    "typography/fluid2xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "desktop"
+    },
+    "typography/fluid3xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "desktop"
+    },
+    "typography/fluid4xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "desktop"
+    },
+    "typography/fluid5xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "desktop"
+    },
+    "typography/fluid6xl": {
+      "value": null,
+      "type": "dimension",
+      "breakpoint": "desktop"
+    },
+    "typography/font/size/xs": {
+      "value": 12,
+      "type": "fontSize",
+      "breakpoint": "desktop"
+    },
+    "typography/font/size/sm": {
+      "value": 14,
+      "type": "fontSize",
+      "breakpoint": "desktop"
+    },
+    "typography/font/size/base": {
+      "value": 16,
+      "type": "fontSize",
+      "breakpoint": "desktop"
+    },
+    "typography/font/size/lg": {
+      "value": 18,
+      "type": "fontSize",
+      "breakpoint": "desktop"
+    },
+    "typography/font/size/xl": {
+      "value": 20,
+      "type": "fontSize",
+      "breakpoint": "desktop"
+    },
+    "typography/font/size2xl": {
+      "value": 24,
+      "type": "fontSize",
+      "breakpoint": "desktop"
+    },
+    "typography/font/size3xl": {
+      "value": 30,
+      "type": "fontSize",
+      "breakpoint": "desktop"
+    },
+    "typography/font/size4xl": {
+      "value": 36,
+      "type": "fontSize",
+      "breakpoint": "desktop"
+    },
+    "typography/font/size5xl": {
+      "value": 48,
+      "type": "fontSize",
+      "breakpoint": "desktop"
+    },
+    "typography/font/size6xl": {
+      "value": 64,
+      "type": "fontSize",
+      "breakpoint": "desktop"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "spacing/xs": {
+    "value": 4,
+    "type": "spacing",
+    "breakpoint": "desktop",
+    "description": "Responsive desktop value"
+  },
+  "spacing/sm": {
+    "value": 8,
+    "type": "spacing",
+    "breakpoint": "desktop",
+    "description": "Responsive desktop value"
+  },
+  "spacing/md": {
+    "value": 16,
+    "type": "spacing",
+    "breakpoint": "desktop",
+    "description": "Responsive desktop value"
+  },
+  "spacing/lg": {
+    "value": 24,
+    "type": "spacing",
+    "breakpoint": "desktop",
+    "description": "Responsive desktop value"
+  },
+  "spacing/xl": {
+    "value": 32,
+    "type": "spacing",
+    "breakpoint": "desktop",
+    "description": "Responsive desktop value"
+  },
+  "spacing/2xl": {
+    "value": 48,
+    "type": "spacing",
+    "breakpoint": "desktop",
+    "description": "Responsive desktop value"
+  },
+  "spacing/3xl": {
+    "value": 64,
+    "type": "spacing",
+    "breakpoint": "desktop",
+    "description": "Responsive desktop value"
+  },
+  "spacing/4xl": {
+    "value": 80,
+    "type": "spacing",
+    "breakpoint": "desktop",
+    "description": "Responsive desktop value"
+  },
+  "spacing/5xl": {
+    "value": 96,
+    "type": "spacing",
+    "breakpoint": "desktop",
+    "description": "Responsive desktop value"
+  }
+}
