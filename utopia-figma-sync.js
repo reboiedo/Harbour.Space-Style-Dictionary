@@ -33,10 +33,12 @@ class UtopiaFigmaSync {
    * Process fluid tokens and calculate breakpoint values
    */
   processFluidTokens(tokens) {
-    const figmaTokens = {};
+    const figmaTokens = {
+      'design-tokens': {} // Single unified collection
+    };
     const self = this; // Store reference to 'this'
 
-    function processObject(obj, path = '') {
+    function processObject(obj, path = '', sourceCategory = '') {
       for (const [key, tokenData] of Object.entries(obj)) {
         const currentPath = path ? `${path}/${key}` : key;
 
@@ -59,35 +61,31 @@ class UtopiaFigmaSync {
               breakpointValues[bp.name] = calculatedValue;
             });
 
-            // Store in figma format
-            if (!figmaTokens[path.split('/')[0]]) {
-              figmaTokens[path.split('/')[0]] = {};
+            // Create grouped token name for unified collection
+            let groupPrefix = 'typography'; // Default for fluid typography
+            if (sourceCategory === 'spacing' || currentPath.includes('spacing')) {
+              groupPrefix = 'spacing';
             }
             
-            const category = path.split('/')[0] || 'typography';
-            const tokenName = currentPath.replace(category + '/', '') || key;
-            
-            if (!figmaTokens[category]) figmaTokens[category] = {};
-            figmaTokens[category][tokenName] = breakpointValues;
+            const groupedTokenName = `${groupPrefix}/${currentPath}`;
+            figmaTokens['design-tokens'][groupedTokenName] = breakpointValues;
 
-            console.log(`Processed fluid token: ${currentPath}`, {
+            console.log(`Processed fluid token: ${groupedTokenName}`, {
               fluid: tokenData.fluid,
               breakpoints: breakpointValues
             });
 
           } else if (tokenData.type === 'dimension' && tokenData.responsive) {
             // This is already a responsive token with breakpoint values
-            if (!figmaTokens[path.split('/')[0]]) {
-              figmaTokens[path.split('/')[0]] = {};
+            let groupPrefix = 'spacing'; // Default for dimensions
+            if (sourceCategory === 'typography' || currentPath.includes('typography') || currentPath.includes('font')) {
+              groupPrefix = 'typography';
             }
             
-            const category = path.split('/')[0] || 'spacing';
-            const tokenName = currentPath.replace(category + '/', '') || key;
-            
-            if (!figmaTokens[category]) figmaTokens[category] = {};
-            figmaTokens[category][tokenName] = tokenData.responsive;
+            const groupedTokenName = `${groupPrefix}/${currentPath}`;
+            figmaTokens['design-tokens'][groupedTokenName] = tokenData.responsive;
 
-            console.log(`Processed responsive token: ${currentPath}`, tokenData.responsive);
+            console.log(`Processed responsive token: ${groupedTokenName}`, tokenData.responsive);
 
           } else if (tokenData.value && !tokenData.fluid && !tokenData.responsive) {
             // This is a simple token with a single value
@@ -101,17 +99,20 @@ class UtopiaFigmaSync {
               breakpointValues[bp.name] = singleValue;
             });
 
-            const category = path.split('/')[0] || 'tokens';
-            const tokenName = currentPath.replace(category + '/', '') || key;
+            let groupPrefix = 'spacing'; // Default
+            if (sourceCategory === 'typography' || currentPath.includes('typography') || currentPath.includes('font')) {
+              groupPrefix = 'typography';
+            }
             
-            if (!figmaTokens[category]) figmaTokens[category] = {};
-            figmaTokens[category][tokenName] = breakpointValues;
+            const groupedTokenName = `${groupPrefix}/${currentPath}`;
+            figmaTokens['design-tokens'][groupedTokenName] = breakpointValues;
 
-            console.log(`Processed simple token: ${currentPath}`, breakpointValues);
+            console.log(`Processed simple token: ${groupedTokenName}`, breakpointValues);
 
           } else {
-            // Nested object, recurse
-            processObject(tokenData, currentPath);
+            // Nested object, recurse with category context
+            const newSourceCategory = sourceCategory || key; // Use parent key as category if not set
+            processObject(tokenData, currentPath, newSourceCategory);
           }
         }
       }

@@ -1,389 +1,381 @@
 {
-  "typography": {
-    "fluid/xs": {
+  "design-tokens": {
+    "typography/typography/fluid/xs": {
       "phone": 11,
       "tablet": 11.51,
       "desktop": 12
     },
-    "fluid/sm": {
+    "typography/typography/fluid/sm": {
       "phone": 13,
       "tablet": 13.51,
       "desktop": 14
     },
-    "fluid/base": {
+    "typography/typography/fluid/base": {
       "phone": 14,
       "tablet": 15.02,
       "desktop": 16
     },
-    "fluid/lg": {
+    "typography/typography/fluid/lg": {
       "phone": 16,
       "tablet": 17.02,
       "desktop": 18
     },
-    "fluid/xl": {
+    "typography/typography/fluid/xl": {
       "phone": 18,
       "tablet": 19.02,
       "desktop": 20
     },
-    "fluid/2xl": {
+    "typography/typography/fluid/2xl": {
       "phone": 20,
       "tablet": 22.04,
       "desktop": 24
     },
-    "fluid/3xl": {
+    "typography/typography/fluid/3xl": {
       "phone": 24,
       "tablet": 27.05,
       "desktop": 30
     },
-    "fluid/4xl": {
+    "typography/typography/fluid/4xl": {
       "phone": 28,
       "tablet": 32.07,
       "desktop": 36
     },
-    "fluid/5xl": {
+    "typography/typography/fluid/5xl": {
       "phone": 32,
       "tablet": 40.15,
       "desktop": 48
     },
-    "fluid/6xl": {
+    "typography/typography/fluid/6xl": {
       "phone": 40,
       "tablet": 52.22,
       "desktop": 64
-    }
-  },
-  "spacing": {
-    "xs": {
+    },
+    "spacing/spacing/xs": {
       "phone": 4,
       "tablet": 4,
       "desktop": 4
     },
-    "sm": {
+    "spacing/spacing/sm": {
       "phone": 6,
       "tablet": 8,
       "desktop": 8
     },
-    "md": {
+    "spacing/spacing/md": {
       "phone": 12,
       "tablet": 16,
       "desktop": 16
     },
-    "lg": {
+    "spacing/spacing/lg": {
       "phone": 16,
       "tablet": 20,
       "desktop": 24
     },
-    "xl": {
+    "spacing/spacing/xl": {
       "phone": 20,
       "tablet": 28,
       "desktop": 32
     },
-    "2xl": {
+    "spacing/spacing/2xl": {
       "phone": 28,
       "tablet": 40,
       "desktop": 48
     },
-    "3xl": {
+    "spacing/spacing/3xl": {
       "phone": 36,
       "tablet": 52,
       "desktop": 64
     },
-    "4xl": {
+    "spacing/spacing/4xl": {
       "phone": 44,
       "tablet": 64,
       "desktop": 80
     },
-    "5xl": {
+    "spacing/spacing/5xl": {
       "phone": 52,
       "tablet": 76,
       "desktop": 96
-    }
-  },
-  "phone": {
-    "spacing/xs": {
+    },
+    "spacing/phone/spacing/xs": {
       "phone": 4,
       "tablet": 4,
       "desktop": 4
     },
-    "spacing/sm": {
+    "spacing/phone/spacing/sm": {
       "phone": 8,
       "tablet": 8,
       "desktop": 8
     },
-    "spacing/md": {
+    "spacing/phone/spacing/md": {
       "phone": 16,
       "tablet": 16,
       "desktop": 16
     },
-    "spacing/lg": {
+    "spacing/phone/spacing/lg": {
       "phone": 24,
       "tablet": 24,
       "desktop": 24
     },
-    "spacing/xl": {
+    "spacing/phone/spacing/xl": {
       "phone": 32,
       "tablet": 32,
       "desktop": 32
     },
-    "spacing2xl": {
+    "spacing/phone/spacing2xl": {
       "phone": 48,
       "tablet": 48,
       "desktop": 48
     },
-    "spacing3xl": {
+    "spacing/phone/spacing3xl": {
       "phone": 64,
       "tablet": 64,
       "desktop": 64
     },
-    "spacing4xl": {
+    "spacing/phone/spacing4xl": {
       "phone": 80,
       "tablet": 80,
       "desktop": 80
     },
-    "spacing5xl": {
+    "spacing/phone/spacing5xl": {
       "phone": 96,
       "tablet": 96,
       "desktop": 96
     },
-    "typography/font/size/xs": {
+    "typography/phone/typography/font/size/xs": {
       "phone": 12,
       "tablet": 12,
       "desktop": 12
     },
-    "typography/font/size/sm": {
+    "typography/phone/typography/font/size/sm": {
       "phone": 14,
       "tablet": 14,
       "desktop": 14
     },
-    "typography/font/size/base": {
+    "typography/phone/typography/font/size/base": {
       "phone": 16,
       "tablet": 16,
       "desktop": 16
     },
-    "typography/font/size/lg": {
+    "typography/phone/typography/font/size/lg": {
       "phone": 18,
       "tablet": 18,
       "desktop": 18
     },
-    "typography/font/size/xl": {
+    "typography/phone/typography/font/size/xl": {
       "phone": 20,
       "tablet": 20,
       "desktop": 20
     },
-    "typography/font/size2xl": {
+    "typography/phone/typography/font/size2xl": {
       "phone": 24,
       "tablet": 24,
       "desktop": 24
     },
-    "typography/font/size3xl": {
+    "typography/phone/typography/font/size3xl": {
       "phone": 30,
       "tablet": 30,
       "desktop": 30
     },
-    "typography/font/size4xl": {
+    "typography/phone/typography/font/size4xl": {
       "phone": 36,
       "tablet": 36,
       "desktop": 36
     },
-    "typography/font/size5xl": {
+    "typography/phone/typography/font/size5xl": {
       "phone": 48,
       "tablet": 48,
       "desktop": 48
     },
-    "typography/font/size6xl": {
+    "typography/phone/typography/font/size6xl": {
       "phone": 64,
       "tablet": 64,
       "desktop": 64
-    }
-  },
-  "tablet": {
-    "spacing/xs": {
+    },
+    "spacing/tablet/spacing/xs": {
       "phone": 4,
       "tablet": 4,
       "desktop": 4
     },
-    "spacing/sm": {
+    "spacing/tablet/spacing/sm": {
       "phone": 8,
       "tablet": 8,
       "desktop": 8
     },
-    "spacing/md": {
+    "spacing/tablet/spacing/md": {
       "phone": 16,
       "tablet": 16,
       "desktop": 16
     },
-    "spacing/lg": {
+    "spacing/tablet/spacing/lg": {
       "phone": 24,
       "tablet": 24,
       "desktop": 24
     },
-    "spacing/xl": {
+    "spacing/tablet/spacing/xl": {
       "phone": 32,
       "tablet": 32,
       "desktop": 32
     },
-    "spacing2xl": {
+    "spacing/tablet/spacing2xl": {
       "phone": 48,
       "tablet": 48,
       "desktop": 48
     },
-    "spacing3xl": {
+    "spacing/tablet/spacing3xl": {
       "phone": 64,
       "tablet": 64,
       "desktop": 64
     },
-    "spacing4xl": {
+    "spacing/tablet/spacing4xl": {
       "phone": 80,
       "tablet": 80,
       "desktop": 80
     },
-    "spacing5xl": {
+    "spacing/tablet/spacing5xl": {
       "phone": 96,
       "tablet": 96,
       "desktop": 96
     },
-    "typography/font/size/xs": {
+    "typography/tablet/typography/font/size/xs": {
       "phone": 12,
       "tablet": 12,
       "desktop": 12
     },
-    "typography/font/size/sm": {
+    "typography/tablet/typography/font/size/sm": {
       "phone": 14,
       "tablet": 14,
       "desktop": 14
     },
-    "typography/font/size/base": {
+    "typography/tablet/typography/font/size/base": {
       "phone": 16,
       "tablet": 16,
       "desktop": 16
     },
-    "typography/font/size/lg": {
+    "typography/tablet/typography/font/size/lg": {
       "phone": 18,
       "tablet": 18,
       "desktop": 18
     },
-    "typography/font/size/xl": {
+    "typography/tablet/typography/font/size/xl": {
       "phone": 20,
       "tablet": 20,
       "desktop": 20
     },
-    "typography/font/size2xl": {
+    "typography/tablet/typography/font/size2xl": {
       "phone": 24,
       "tablet": 24,
       "desktop": 24
     },
-    "typography/font/size3xl": {
+    "typography/tablet/typography/font/size3xl": {
       "phone": 30,
       "tablet": 30,
       "desktop": 30
     },
-    "typography/font/size4xl": {
+    "typography/tablet/typography/font/size4xl": {
       "phone": 36,
       "tablet": 36,
       "desktop": 36
     },
-    "typography/font/size5xl": {
+    "typography/tablet/typography/font/size5xl": {
       "phone": 48,
       "tablet": 48,
       "desktop": 48
     },
-    "typography/font/size6xl": {
+    "typography/tablet/typography/font/size6xl": {
       "phone": 64,
       "tablet": 64,
       "desktop": 64
-    }
-  },
-  "desktop": {
-    "spacing/xs": {
+    },
+    "spacing/desktop/spacing/xs": {
       "phone": 4,
       "tablet": 4,
       "desktop": 4
     },
-    "spacing/sm": {
+    "spacing/desktop/spacing/sm": {
       "phone": 8,
       "tablet": 8,
       "desktop": 8
     },
-    "spacing/md": {
+    "spacing/desktop/spacing/md": {
       "phone": 16,
       "tablet": 16,
       "desktop": 16
     },
-    "spacing/lg": {
+    "spacing/desktop/spacing/lg": {
       "phone": 24,
       "tablet": 24,
       "desktop": 24
     },
-    "spacing/xl": {
+    "spacing/desktop/spacing/xl": {
       "phone": 32,
       "tablet": 32,
       "desktop": 32
     },
-    "spacing2xl": {
+    "spacing/desktop/spacing2xl": {
       "phone": 48,
       "tablet": 48,
       "desktop": 48
     },
-    "spacing3xl": {
+    "spacing/desktop/spacing3xl": {
       "phone": 64,
       "tablet": 64,
       "desktop": 64
     },
-    "spacing4xl": {
+    "spacing/desktop/spacing4xl": {
       "phone": 80,
       "tablet": 80,
       "desktop": 80
     },
-    "spacing5xl": {
+    "spacing/desktop/spacing5xl": {
       "phone": 96,
       "tablet": 96,
       "desktop": 96
     },
-    "typography/font/size/xs": {
+    "typography/desktop/typography/font/size/xs": {
       "phone": 12,
       "tablet": 12,
       "desktop": 12
     },
-    "typography/font/size/sm": {
+    "typography/desktop/typography/font/size/sm": {
       "phone": 14,
       "tablet": 14,
       "desktop": 14
     },
-    "typography/font/size/base": {
+    "typography/desktop/typography/font/size/base": {
       "phone": 16,
       "tablet": 16,
       "desktop": 16
     },
-    "typography/font/size/lg": {
+    "typography/desktop/typography/font/size/lg": {
       "phone": 18,
       "tablet": 18,
       "desktop": 18
     },
-    "typography/font/size/xl": {
+    "typography/desktop/typography/font/size/xl": {
       "phone": 20,
       "tablet": 20,
       "desktop": 20
     },
-    "typography/font/size2xl": {
+    "typography/desktop/typography/font/size2xl": {
       "phone": 24,
       "tablet": 24,
       "desktop": 24
     },
-    "typography/font/size3xl": {
+    "typography/desktop/typography/font/size3xl": {
       "phone": 30,
       "tablet": 30,
       "desktop": 30
     },
-    "typography/font/size4xl": {
+    "typography/desktop/typography/font/size4xl": {
       "phone": 36,
       "tablet": 36,
       "desktop": 36
     },
-    "typography/font/size5xl": {
+    "typography/desktop/typography/font/size5xl": {
       "phone": 48,
       "tablet": 48,
       "desktop": 48
     },
-    "typography/font/size6xl": {
+    "typography/desktop/typography/font/size6xl": {
       "phone": 64,
       "tablet": 64,
       "desktop": 64
