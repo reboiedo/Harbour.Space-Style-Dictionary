@@ -1,0 +1,78 @@
+name: Build Design Tokens
+
+on:
+  push:
+    branches: [main, master]
+    paths: ['tokens/**', 'style-dictionary.config.js', 'figma-plugin-sync.js']
+  workflow_dispatch:
+
+jobs:
+  build-tokens:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Style Dictionary tokens
+        run: npm run build:tokens
+
+      - name: Generate Figma plugin format
+        run: npm run build:plugin
+
+      - name: Commit generated tokens back to repository
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Add the generated files
+          git add dist/figma-plugin-format.json
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🤖 Auto-update Figma plugin tokens [skip ci]"
+            git push
+          fi
+
+      - name: Create/Update Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: tokens-latest
+          name: Latest Design Tokens
+          body: |
+            🎨 **Design Tokens Release**
+            
+            This release contains the latest design tokens in Figma plugin format.
+            
+            **Direct URLs for Figma Plugin:**
+            - `https://github.com/${{ github.repository }}/raw/main/dist/figma-plugin-format.json`
+            
+            **How to use:**
+            1. Copy the URL above
+            2. Open the "JSON to Variables" Figma plugin
+            3. Enter your GitHub username and repository name
+            4. Click "Fetch from GitHub"
+            
+            **Last updated:** ${{ github.event.head_commit.timestamp }}
+            **Commit:** ${{ github.sha }}
+          files: |
+            dist/figma-plugin-format.json
+          prerelease: false
+          make_latest: true
+
+      - name: Summary
+        run: |
+          echo "🎉 Design tokens built successfully!"
+          echo "📍 Direct URL: https://github.com/${{ github.repository }}/raw/main/dist/figma-plugin-format.json"
+          echo "🔧 Use '${{ github.repository_owner }}' and '${{ github.event.repository.name }}' in your Figma plugin"

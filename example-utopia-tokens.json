@@ -1,0 +1,66 @@
+{
+  "typography": {
+    "fluid": {
+      "xs": {
+        "value": "clamp(12.50px, 12.50px + (12.80 - 12.50) * ((100vw - 320px) / (1240 - 320)), 12.80px)",
+        "type": "fontSizes",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1240,
+          "minSize": 12.5,
+          "maxSize": 12.8
+        }
+      },
+      "sm": {
+        "value": "clamp(15.00px, 15.00px + (16.00 - 15.00) * ((100vw - 320px) / (1240 - 320)), 16.00px)",
+        "type": "fontSizes",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1240,
+          "minSize": 15,
+          "maxSize": 16
+        }
+      },
+      "base": {
+        "value": "clamp(18.00px, 18.00px + (20.00 - 18.00) * ((100vw - 320px) / (1240 - 320)), 20.00px)",
+        "type": "fontSizes",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1240,
+          "minSize": 18,
+          "maxSize": 20
+        }
+      },
+      "lg": {
+        "value": "clamp(21.60px, 21.60px + (25.00 - 21.60) * ((100vw - 320px) / (1240 - 320)), 25.00px)",
+        "type": "fontSizes",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1240,
+          "minSize": 21.6,
+          "maxSize": 25
+        }
+      }
+    }
+  },
+  "spacing": {
+    "xs": {
+      "value": "4px",
+      "type": "dimension",
+      "responsive": {
+        "phone": 4,
+        "tablet": 4,
+        "desktop": 4
+      }
+    },
+    "sm": {
+      "value": "8px",
+      "type": "dimension",
+      "responsive": {
+        "phone": 6,
+        "tablet": 8,
+        "desktop": 8
+      }
+    }
+  }
+}

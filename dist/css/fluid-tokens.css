@@ -1,0 +1,91 @@
+/* Fluid Design Tokens - Generated from Style Dictionary */
+/* @link https://utopia.fyi */
+
+:root {
+  --fluid-min-width: 320;
+  --fluid-max-width: 1240;
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
+}
+
+@media screen and (min-width: 1240px) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+}
+
+:root {
+  --f-typography-fluid-xs-min: 11.00;
+  --f-typography-fluid-xs-max: 12.00;
+  --step-typography-fluid-xs: calc(
+    ((var(--f-typography-fluid-xs-min) / 16) * 1rem) + (var(--f-typography-fluid-xs-max) - var(--f-typography-fluid-xs-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-typography-fluid-sm-min: 13.00;
+  --f-typography-fluid-sm-max: 14.00;
+  --step-typography-fluid-sm: calc(
+    ((var(--f-typography-fluid-sm-min) / 16) * 1rem) + (var(--f-typography-fluid-sm-max) - var(--f-typography-fluid-sm-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-typography-fluid-base-min: 14.00;
+  --f-typography-fluid-base-max: 16.00;
+  --step-typography-fluid-base: calc(
+    ((var(--f-typography-fluid-base-min) / 16) * 1rem) + (var(--f-typography-fluid-base-max) - var(--f-typography-fluid-base-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-typography-fluid-lg-min: 16.00;
+  --f-typography-fluid-lg-max: 18.00;
+  --step-typography-fluid-lg: calc(
+    ((var(--f-typography-fluid-lg-min) / 16) * 1rem) + (var(--f-typography-fluid-lg-max) - var(--f-typography-fluid-lg-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-typography-fluid-xl-min: 18.00;
+  --f-typography-fluid-xl-max: 20.00;
+  --step-typography-fluid-xl: calc(
+    ((var(--f-typography-fluid-xl-min) / 16) * 1rem) + (var(--f-typography-fluid-xl-max) - var(--f-typography-fluid-xl-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-typography-fluid-2xl-min: 20.00;
+  --f-typography-fluid-2xl-max: 24.00;
+  --step-typography-fluid-2xl: calc(
+    ((var(--f-typography-fluid-2xl-min) / 16) * 1rem) + (var(--f-typography-fluid-2xl-max) - var(--f-typography-fluid-2xl-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-typography-fluid-3xl-min: 24.00;
+  --f-typography-fluid-3xl-max: 30.00;
+  --step-typography-fluid-3xl: calc(
+    ((var(--f-typography-fluid-3xl-min) / 16) * 1rem) + (var(--f-typography-fluid-3xl-max) - var(--f-typography-fluid-3xl-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-typography-fluid-4xl-min: 28.00;
+  --f-typography-fluid-4xl-max: 36.00;
+  --step-typography-fluid-4xl: calc(
+    ((var(--f-typography-fluid-4xl-min) / 16) * 1rem) + (var(--f-typography-fluid-4xl-max) - var(--f-typography-fluid-4xl-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-typography-fluid-5xl-min: 32.00;
+  --f-typography-fluid-5xl-max: 48.00;
+  --step-typography-fluid-5xl: calc(
+    ((var(--f-typography-fluid-5xl-min) / 16) * 1rem) + (var(--f-typography-fluid-5xl-max) - var(--f-typography-fluid-5xl-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-typography-fluid-6xl-min: 40.00;
+  --f-typography-fluid-6xl-max: 64.00;
+  --step-typography-fluid-6xl: calc(
+    ((var(--f-typography-fluid-6xl-min) / 16) * 1rem) + (var(--f-typography-fluid-6xl-max) - var(--f-typography-fluid-6xl-min)) *
+      var(--fluid-bp)
+  );
+
+}

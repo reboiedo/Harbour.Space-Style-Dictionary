@@ -1,4 +1,56 @@
 {
+  "typography": {
+    "fluid/xs": {
+      "phone": 11,
+      "tablet": 11.51,
+      "desktop": 12
+    },
+    "fluid/sm": {
+      "phone": 13,
+      "tablet": 13.51,
+      "desktop": 14
+    },
+    "fluid/base": {
+      "phone": 14,
+      "tablet": 15.02,
+      "desktop": 16
+    },
+    "fluid/lg": {
+      "phone": 16,
+      "tablet": 17.02,
+      "desktop": 18
+    },
+    "fluid/xl": {
+      "phone": 18,
+      "tablet": 19.02,
+      "desktop": 20
+    },
+    "fluid/2xl": {
+      "phone": 20,
+      "tablet": 22.04,
+      "desktop": 24
+    },
+    "fluid/3xl": {
+      "phone": 24,
+      "tablet": 27.05,
+      "desktop": 30
+    },
+    "fluid/4xl": {
+      "phone": 28,
+      "tablet": 32.07,
+      "desktop": 36
+    },
+    "fluid/5xl": {
+      "phone": 32,
+      "tablet": 40.15,
+      "desktop": 48
+    },
+    "fluid/6xl": {
+      "phone": 40,
+      "tablet": 52.22,
+      "desktop": 64
+    }
+  },
   "spacing": {
     "xs": {
       "phone": 4,
@@ -6,143 +58,332 @@
       "desktop": 4
     },
     "sm": {
-      "phone": 8,
+      "phone": 6,
       "tablet": 8,
       "desktop": 8
     },
     "md": {
-      "phone": 16,
+      "phone": 12,
       "tablet": 16,
       "desktop": 16
     },
     "lg": {
-      "phone": 24,
-      "tablet": 24,
+      "phone": 16,
+      "tablet": 20,
       "desktop": 24
     },
     "xl": {
-      "phone": 32,
-      "tablet": 32,
+      "phone": 20,
+      "tablet": 28,
       "desktop": 32
     },
     "2xl": {
-      "phone": 48,
-      "tablet": 48,
+      "phone": 28,
+      "tablet": 40,
       "desktop": 48
     },
     "3xl": {
-      "phone": 64,
-      "tablet": 64,
+      "phone": 36,
+      "tablet": 52,
       "desktop": 64
     },
     "4xl": {
-      "phone": 80,
-      "tablet": 80,
+      "phone": 44,
+      "tablet": 64,
       "desktop": 80
     },
     "5xl": {
-      "phone": 96,
-      "tablet": 96,
+      "phone": 52,
+      "tablet": 76,
       "desktop": 96
     }
   },
-  "typography": {
-    "/fluid/xs": {
-      "phone": null,
-      "tablet": null,
-      "desktop": null
+  "phone": {
+    "spacing/xs": {
+      "phone": 4,
+      "tablet": 4,
+      "desktop": 4
     },
-    "/fluid/sm": {
-      "phone": null,
-      "tablet": null,
-      "desktop": null
+    "spacing/sm": {
+      "phone": 8,
+      "tablet": 8,
+      "desktop": 8
     },
-    "/fluid/base": {
-      "phone": null,
-      "tablet": null,
-      "desktop": null
-    },
-    "/fluid/lg": {
-      "phone": null,
-      "tablet": null,
-      "desktop": null
-    },
-    "/fluid/xl": {
-      "phone": null,
-      "tablet": null,
-      "desktop": null
-    },
-    "fluid2xl": {
-      "phone": null,
-      "tablet": null,
-      "desktop": null
-    },
-    "fluid3xl": {
-      "phone": null,
-      "tablet": null,
-      "desktop": null
-    },
-    "fluid4xl": {
-      "phone": null,
-      "tablet": null,
-      "desktop": null
-    },
-    "fluid5xl": {
-      "phone": null,
-      "tablet": null,
-      "desktop": null
-    },
-    "fluid6xl": {
-      "phone": null,
-      "tablet": null,
-      "desktop": null
-    },
-    "/font/size/xs": {
-      "phone": 12,
-      "tablet": 12,
-      "desktop": 12
-    },
-    "/font/size/sm": {
-      "phone": 14,
-      "tablet": 14,
-      "desktop": 14
-    },
-    "/font/size/base": {
+    "spacing/md": {
       "phone": 16,
       "tablet": 16,
       "desktop": 16
     },
-    "/font/size/lg": {
-      "phone": 18,
-      "tablet": 18,
-      "desktop": 18
-    },
-    "/font/size/xl": {
-      "phone": 20,
-      "tablet": 20,
-      "desktop": 20
-    },
-    "/font/size2xl": {
+    "spacing/lg": {
       "phone": 24,
       "tablet": 24,
       "desktop": 24
     },
-    "/font/size3xl": {
-      "phone": 30,
-      "tablet": 30,
-      "desktop": 30
+    "spacing/xl": {
+      "phone": 32,
+      "tablet": 32,
+      "desktop": 32
     },
-    "/font/size4xl": {
-      "phone": 36,
-      "tablet": 36,
-      "desktop": 36
-    },
-    "/font/size5xl": {
+    "spacing2xl": {
       "phone": 48,
       "tablet": 48,
       "desktop": 48
     },
-    "/font/size6xl": {
+    "spacing3xl": {
+      "phone": 64,
+      "tablet": 64,
+      "desktop": 64
+    },
+    "spacing4xl": {
+      "phone": 80,
+      "tablet": 80,
+      "desktop": 80
+    },
+    "spacing5xl": {
+      "phone": 96,
+      "tablet": 96,
+      "desktop": 96
+    },
+    "typography/font/size/xs": {
+      "phone": 12,
+      "tablet": 12,
+      "desktop": 12
+    },
+    "typography/font/size/sm": {
+      "phone": 14,
+      "tablet": 14,
+      "desktop": 14
+    },
+    "typography/font/size/base": {
+      "phone": 16,
+      "tablet": 16,
+      "desktop": 16
+    },
+    "typography/font/size/lg": {
+      "phone": 18,
+      "tablet": 18,
+      "desktop": 18
+    },
+    "typography/font/size/xl": {
+      "phone": 20,
+      "tablet": 20,
+      "desktop": 20
+    },
+    "typography/font/size2xl": {
+      "phone": 24,
+      "tablet": 24,
+      "desktop": 24
+    },
+    "typography/font/size3xl": {
+      "phone": 30,
+      "tablet": 30,
+      "desktop": 30
+    },
+    "typography/font/size4xl": {
+      "phone": 36,
+      "tablet": 36,
+      "desktop": 36
+    },
+    "typography/font/size5xl": {
+      "phone": 48,
+      "tablet": 48,
+      "desktop": 48
+    },
+    "typography/font/size6xl": {
+      "phone": 64,
+      "tablet": 64,
+      "desktop": 64
+    }
+  },
+  "tablet": {
+    "spacing/xs": {
+      "phone": 4,
+      "tablet": 4,
+      "desktop": 4
+    },
+    "spacing/sm": {
+      "phone": 8,
+      "tablet": 8,
+      "desktop": 8
+    },
+    "spacing/md": {
+      "phone": 16,
+      "tablet": 16,
+      "desktop": 16
+    },
+    "spacing/lg": {
+      "phone": 24,
+      "tablet": 24,
+      "desktop": 24
+    },
+    "spacing/xl": {
+      "phone": 32,
+      "tablet": 32,
+      "desktop": 32
+    },
+    "spacing2xl": {
+      "phone": 48,
+      "tablet": 48,
+      "desktop": 48
+    },
+    "spacing3xl": {
+      "phone": 64,
+      "tablet": 64,
+      "desktop": 64
+    },
+    "spacing4xl": {
+      "phone": 80,
+      "tablet": 80,
+      "desktop": 80
+    },
+    "spacing5xl": {
+      "phone": 96,
+      "tablet": 96,
+      "desktop": 96
+    },
+    "typography/font/size/xs": {
+      "phone": 12,
+      "tablet": 12,
+      "desktop": 12
+    },
+    "typography/font/size/sm": {
+      "phone": 14,
+      "tablet": 14,
+      "desktop": 14
+    },
+    "typography/font/size/base": {
+      "phone": 16,
+      "tablet": 16,
+      "desktop": 16
+    },
+    "typography/font/size/lg": {
+      "phone": 18,
+      "tablet": 18,
+      "desktop": 18
+    },
+    "typography/font/size/xl": {
+      "phone": 20,
+      "tablet": 20,
+      "desktop": 20
+    },
+    "typography/font/size2xl": {
+      "phone": 24,
+      "tablet": 24,
+      "desktop": 24
+    },
+    "typography/font/size3xl": {
+      "phone": 30,
+      "tablet": 30,
+      "desktop": 30
+    },
+    "typography/font/size4xl": {
+      "phone": 36,
+      "tablet": 36,
+      "desktop": 36
+    },
+    "typography/font/size5xl": {
+      "phone": 48,
+      "tablet": 48,
+      "desktop": 48
+    },
+    "typography/font/size6xl": {
+      "phone": 64,
+      "tablet": 64,
+      "desktop": 64
+    }
+  },
+  "desktop": {
+    "spacing/xs": {
+      "phone": 4,
+      "tablet": 4,
+      "desktop": 4
+    },
+    "spacing/sm": {
+      "phone": 8,
+      "tablet": 8,
+      "desktop": 8
+    },
+    "spacing/md": {
+      "phone": 16,
+      "tablet": 16,
+      "desktop": 16
+    },
+    "spacing/lg": {
+      "phone": 24,
+      "tablet": 24,
+      "desktop": 24
+    },
+    "spacing/xl": {
+      "phone": 32,
+      "tablet": 32,
+      "desktop": 32
+    },
+    "spacing2xl": {
+      "phone": 48,
+      "tablet": 48,
+      "desktop": 48
+    },
+    "spacing3xl": {
+      "phone": 64,
+      "tablet": 64,
+      "desktop": 64
+    },
+    "spacing4xl": {
+      "phone": 80,
+      "tablet": 80,
+      "desktop": 80
+    },
+    "spacing5xl": {
+      "phone": 96,
+      "tablet": 96,
+      "desktop": 96
+    },
+    "typography/font/size/xs": {
+      "phone": 12,
+      "tablet": 12,
+      "desktop": 12
+    },
+    "typography/font/size/sm": {
+      "phone": 14,
+      "tablet": 14,
+      "desktop": 14
+    },
+    "typography/font/size/base": {
+      "phone": 16,
+      "tablet": 16,
+      "desktop": 16
+    },
+    "typography/font/size/lg": {
+      "phone": 18,
+      "tablet": 18,
+      "desktop": 18
+    },
+    "typography/font/size/xl": {
+      "phone": 20,
+      "tablet": 20,
+      "desktop": 20
+    },
+    "typography/font/size2xl": {
+      "phone": 24,
+      "tablet": 24,
+      "desktop": 24
+    },
+    "typography/font/size3xl": {
+      "phone": 30,
+      "tablet": 30,
+      "desktop": 30
+    },
+    "typography/font/size4xl": {
+      "phone": 36,
+      "tablet": 36,
+      "desktop": 36
+    },
+    "typography/font/size5xl": {
+      "phone": 48,
+      "tablet": 48,
+      "desktop": 48
+    },
+    "typography/font/size6xl": {
       "phone": 64,
       "tablet": 64,
       "desktop": 64

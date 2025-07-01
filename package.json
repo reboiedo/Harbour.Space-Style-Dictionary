@@ -11,7 +11,9 @@
     "clean": "rm -rf dist/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:plugin": "node figma-plugin-sync.js",
+    "build:utopia": "node utopia-figma-sync.js",
     "build:all": "npm run build && npm run build:plugin",
+    "build:fluid": "npm run build:tokens && npm run build:utopia",
     "deploy": "./deploy.sh"
   },
   "keywords": [],

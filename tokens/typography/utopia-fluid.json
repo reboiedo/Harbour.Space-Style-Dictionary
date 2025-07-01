@@ -1,0 +1,94 @@
+{
+  "typography": {
+    "fluid": {
+      "xs": {
+        "value": "clamp(12.50px, 12.50px + (12.80 - 12.50) * ((100vw - 320px) / (1240 - 320)), 12.80px)",
+        "type": "fontSizes",
+        "description": "Extra small fluid typography",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1240,
+          "minSize": 12.50,
+          "maxSize": 12.80
+        }
+      },
+      "sm": {
+        "value": "clamp(15.00px, 15.00px + (16.00 - 15.00) * ((100vw - 320px) / (1240 - 320)), 16.00px)",
+        "type": "fontSizes",
+        "description": "Small fluid typography",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1240,
+          "minSize": 15.00,
+          "maxSize": 16.00
+        }
+      },
+      "base": {
+        "value": "clamp(18.00px, 18.00px + (20.00 - 18.00) * ((100vw - 320px) / (1240 - 320)), 20.00px)",
+        "type": "fontSizes",
+        "description": "Base fluid typography", 
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1240,
+          "minSize": 18.00,
+          "maxSize": 20.00
+        }
+      },
+      "lg": {
+        "value": "clamp(21.60px, 21.60px + (25.00 - 21.60) * ((100vw - 320px) / (1240 - 320)), 25.00px)",
+        "type": "fontSizes",
+        "description": "Large fluid typography",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1240,
+          "minSize": 21.60,
+          "maxSize": 25.00
+        }
+      },
+      "xl": {
+        "value": "clamp(25.92px, 25.92px + (31.25 - 25.92) * ((100vw - 320px) / (1240 - 320)), 31.25px)",
+        "type": "fontSizes",
+        "description": "Extra large fluid typography",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1240,
+          "minSize": 25.92,
+          "maxSize": 31.25
+        }
+      },
+      "2xl": {
+        "value": "clamp(31.10px, 31.10px + (39.06 - 31.10) * ((100vw - 320px) / (1240 - 320)), 39.06px)",
+        "type": "fontSizes",
+        "description": "2X large fluid typography",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1240,
+          "minSize": 31.10,
+          "maxSize": 39.06
+        }
+      },
+      "3xl": {
+        "value": "clamp(37.32px, 37.32px + (48.83 - 37.32) * ((100vw - 320px) / (1240 - 320)), 48.83px)",
+        "type": "fontSizes",
+        "description": "3X large fluid typography",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1240,
+          "minSize": 37.32,
+          "maxSize": 48.83
+        }
+      },
+      "4xl": {
+        "value": "clamp(44.79px, 44.79px + (61.04 - 44.79) * ((100vw - 320px) / (1240 - 320)), 61.04px)",
+        "type": "fontSizes",
+        "description": "4X large fluid typography",
+        "fluid": {
+          "minWidth": 320,
+          "maxWidth": 1240,
+          "minSize": 44.79,
+          "maxSize": 61.04
+        }
+      }
+    }
+  }
+}
